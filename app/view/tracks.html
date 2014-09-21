@@ -1,0 +1,22 @@
+<div class="row-fluid">
+	
+	<div class="col-md-6">
+	<section class="track-panel">
+		<ul>
+			<li ng-repeat="t in tracks">
+					<a href="#" class="track" data-url="{{t.track_url}}" ng-click="play($event)"><i class="fa fa-play"></i> {{t.track_name}}</a>
+					<span class="right">
+					<favorites data-type="track" data-trackid="{{t.track_id}}"></favorites>
+					</span>
+			</li>
+		</ul>
+	
+	</section>
+	</div>
+	<div class="col-md-6">
+		<section class="audio-panel">
+			<audio id="audio-player" controls>
+			</audio>
+		</section>
+	</div>
+</div>

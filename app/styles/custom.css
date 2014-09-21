@@ -1,0 +1,49 @@
+/*!
+ * Matchup custom styles
+ * Inherit from the bootstrap
+ */
+
+/*Reset styles missed by bootstrap*/
+li{list-style:none}
+ul{margin:0;padding:0}
+a{cursor: pointer;outline-style:none}
+a:hover{text-decoration: none;}
+.container-fluid{padding:0}
+.left{float:left}
+.right{float:right;margin-right: 10px}
+.relative{position: relative;}
+/*loading*/
+.loading{}
+.abs-center{position: absolute;left: 0;right: 0;bottom: 0;top: 0;margin: auto;}
+.no-abs-center{position: static!important;padding:10px}
+.no-abs-center p{display:inline;}
+
+.header{background: #444;text-align: center;line-height: 50px;height: 50px;overflow: hidden;}
+.header span{color:#fff;font:bold 124% 'Open Sans Condensed', sans-serif;text-transform: uppercase;}
+.header a.home{font-size:2em;color:#fff;}
+
+.contents{width:90%;margin: 10px auto;text-align: center;}
+
+
+.search-box{height: 30%;width:40%;text-align: center}
+.search-box .input-control{width: 50%;height: 35px;border: 1px solid #ccc;border-radius: 5px;}
+
+/* Artist panel*/
+.img-panel{position: relative;z-index: 1}
+.img-panel li{display: inline-block;padding:10px;border:1px solid #ccc;margin:0 10px 10px 0;border-radius:5px;box-shadow:0 0 5px #888}
+.img-panel li img{width:150px;height: 150px;cursor:pointer}
+.img-panel li figcaption{width:150px;overflow-x:hidden;white-space: nowrap;text-overflow:ellipsis}
+.img-panel li a.favs{font-size:85%}
+
+.favorites{position: fixed;bottom: 0;right: 10px;background: #333;border-radius:5px 5px 0 0; box-shadow: 0 0 4px #ccc;color: #fff;padding:10px;width:300px;z-index: 2}
+.favorites h3{font:bold 124% 'Open Sans Condensed', sans-serif;margin: 0}
+.favorites section{background: #fff;color:#333}
+.favorites section i{margin:0 5px;color:#f00;cursor:pointer;}
+
+.navs{height:20%}
+.navs a{font-size:4em}
+
+.track-panel{text-align: left;height: 500px;overflow: auto}
+.track-panel li{padding: 5px;border:1px solid #ccc;margin-bottom: 5px;border-radius:4px}
+.track-panel li > a{color:#333;width: 75%;display: inline-block;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+

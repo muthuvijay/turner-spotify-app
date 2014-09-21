@@ -1,0 +1,22 @@
+<div class="row-fluid">
+	
+	<section class="albums-panel img-panel">
+		<ul>
+			<li ng-repeat="a in albums">
+				<figure>
+					<a href="#/album/{{a.album_id}}">
+					<img ng-src="{{a.album_image}}" title="{{a.album_name}}" />
+					</a>
+					<figcaption>{{a.album_name}}</figcaption>
+					
+					<favorites data-type="album" data-albumid="{{a.album_id}}"></favorites>
+				</figure>	
+			</li>
+		</ul>
+	
+	</section>
+	<nav class="navs abs-center">
+<span class="left"><a href="#" ng-show="page.prev!=null" data-page="{{page.prev}}" ng-click="paginate($event)"><i class="fa fa-chevron-left"></i></a></span>
+<span class="right"><a href="#" ng-show="page.next!=null" data-page="{{page.next}}" ng-click="paginate($event)"><i class="fa fa-chevron-right"></i></a></span>
+</nav>
+</div>

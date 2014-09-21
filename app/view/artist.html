@@ -1,0 +1,28 @@
+<div class="row-fluid">
+	<section>
+		<div class="abs-center search-box">
+		<p>{{labels.SEARCH_LABEL}}</p>
+		<input type="search" name="q" class="input-control" id="search-query" />
+		<button class="btn btn-md btn-info" ng-click="searchArtist($event);">Search</button>
+		</div>
+	</section>
+	
+	<section class="artist-panel img-panel">
+		<ul>
+			<li ng-repeat="a in artists">
+				<figure>
+					<a href="#/artist/{{a.artist_id}}">
+					<img ng-src="{{a.artist_image}}" title="{{a.artist_name}}" />
+					</a>
+					<figcaption>{{a.artist_name}}</figcaption>
+					<favorites data-type="artist" data-artistid="{{a.artist_id}}"></favorites>
+				</figure>	
+			</li>
+		</ul>
+	
+	</section>
+	<nav class="navs abs-center hide">
+		<span class="left"><a href="#" ng-show="page.prev!=null" data-page="{{page.prev}}" ng-click="paginate($event)"><i class="fa fa-chevron-left"></i></a></span>
+		<span class="right"><a href="#" ng-show="page.next!=null" data-page="{{page.next}}" ng-click="paginate($event)"><i class="fa fa-chevron-right"></i></a></span>
+	</nav>
+</div>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="TurnerSpotifyApp">
+<head>
+	<title>Turner Spotify App Demo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="bower_components/bootstrap-css-only/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="app/styles/styles.min.css" />
+</head>
+<body>
+<div class="container-fluid">
+<section class="appBox">
+<div ng-include src="'app/view/header.html'"></div>
+<div ng-view class="contents">
+</div>
+<div ng-include src="'app/view/favorites.html'"></div>
+
+</section>
+</div>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.0rc1/angular-route.min.js"></script>
+
+<script type="text/javascript" src="app/js/app.min.js"></script>
+
+</body>
+</html>
